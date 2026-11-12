@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "cloud": {
+    "astra-planner": {
+      "model": "gpt-6-astra",
+      "effort": "low"
+    },
+    "sol-executor": {
+      "model": "gpt-6.1-sol",
+      "effort": "low"
+    },
+    "sol-reviewer": {
+      "model": "gpt-6.1-sol",
+      "effort": "low"
+    },
+    "luna-triage": {
+      "model": "gpt-6-luna",
+      "effort": "low"
+    },
+    "terra-visual": {
+      "model": "gpt-6.1-terra",
+      "effort": "low"
+    }
+  },
+  "local": {
+    "dsh": {
+      "model": "gpt-oss:20b",
+      "role": "small-code"
+    },
+    "qwen": {
+      "model": "hf.co/unsloth/Qwen3-Coder-Next-GGUF:NOTPL",
+      "role": "bounded-code-search-extraction-summary-batches"
+    },
+    "opencode": {
+      "model": "nemotron-3.5-lightning:30b-a3b",
+      "role": "investigation"
+    }
+  },
+  "local_requirements": {
+    "execution_queue": "serial-local",
+    "ollama_num_ctx_min": 32768,
+    "flash_attention": true,
+    "kv_cache_type": "q8_0",
+    "download_models": false,
+    "chunking_and_compact_outputs": true,
+    "modify_original_sources": false,
+    "verify_availability": true
+  },
+  "local_first": {
+    "total_bytes": 1048576,
+    "largest_file_bytes": 524288,
+    "mechanical_count": 5
+  },
+  "controller": {
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "planner": "astra-planner"
+  }
+}

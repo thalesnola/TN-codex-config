@@ -1,0 +1,14 @@
+# Machine-specific or sensitive Codex state
+config.toml
+auth.json
+sessions/
+logs/
+*.jsonl
+
+# OS files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+artifacts/
+backups/

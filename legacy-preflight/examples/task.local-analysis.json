@@ -1,0 +1,13 @@
+{
+  "id": "example-local-analysis",
+  "classification": "internal",
+  "operation": "analyze",
+  "worker": "qwen-ollama",
+  "model": "qwen2.5:7b",
+  "workspace": "C:\\Users\\local-user\\codex-local-first-router",
+  "include": ["src", "README.md"],
+  "exclude": [".env", "evidence", "secrets"],
+  "objective": "Mapear os módulos e retornar somente caminhos, responsabilidades e lacunas.",
+  "acceptance": ["Sem modificar arquivos", "Retornar no máximo 30 linhas", "Citar caminho e linha para cada fato"],
+  "max_output_lines": 30
+}

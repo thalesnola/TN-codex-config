@@ -1,0 +1,6 @@
+# Mesclar manualmente após validação. Não substitui auth, MCPs ou marketplaces.
+# Terra é o padrão econômico do Codex; Astra é selecionado explicitamente para planejamento excepcional.
+model = "gpt-5.6-terra"
+
+[desktop]
+enabled-reasoning-efforts = ["none", "low"]

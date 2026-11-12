@@ -1,0 +1,8 @@
+# Fragmento portável; mescle com a configuração existente.
+# Não copie credenciais, plugins, projetos ou permissões da máquina.
+model = "gpt-6-luna"
+model_reasoning_effort = "low"
+
+[agents]
+default_subagent_model = "gpt-6-luna"
+default_subagent_reasoning_effort = "low"

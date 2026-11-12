@@ -1,0 +1,13 @@
+{
+  "id": "example-local-analysis",
+  "classification": "internal",
+  "operation": "analyze",
+  "worker": "qwen-ollama",
+  "model": "gpt-oss:20b",
+  "workspace": "C:\\Users\\<USUARIO>\\codex-token-router",
+  "include": ["scripts", "README.md"],
+  "exclude": [".env", "evidence", "secrets"],
+  "objective": "Mapear os módulos e retornar somente caminhos, responsabilidades e lacunas.",
+  "acceptance": ["Sem modificar arquivos", "Retornar no máximo 30 linhas", "Citar caminho e linha para cada fato"],
+  "max_output_lines": 30
+}
